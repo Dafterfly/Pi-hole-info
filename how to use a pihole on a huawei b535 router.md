@@ -40,57 +40,55 @@ This guide will cover the second option because then any device that connects to
 
 7. Then click save
    
-   ### Set a manual DNS
+### Set a manual DNS
    
-   1. Scroll back up to Advanced -> Router -> DHCP
-   
-   2. Open up your browser's developer tools. On Firefox it is with the F12 key.
-   
-   3. In the Console, type the following and then press Enter:
+1. Scroll back up to Advanced -> Router -> DHCP
+
+2. Open up your browser's developer tools. On Firefox it is with the F12 key.
+
+3. In the Console, type the following and then press Enter:
       
       ```shell
       $('#dhcp_dns').show();
-      ```
-   
-   4. Tick the "Set DNS server manually" that comes up
-   
-   5. You will see some new options come up
-      
-      ![dns server](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/40ae533f-c940-4f88-bfb8-e30124ac0240)
-   
-   6. Fill in only the "Primary DNS server" field with the Static IP address given to the rpi in the MAC Address Binding List
-      
-      ### Force the router to only use IPv4 and use only the pi-hole for IPV4 DNS
-      
-      1. Go to Network -> Mobile Network -> Internet Connection -> Profiles
-      
-      2. Click on the plus sign
-      
-      3. Give it a name that you will remember
-      
-      4. Tick the  '"Set as Default Profile" box
-      
-      5. Fill in "internet" for the APN
-      
-      6. For IP Type select "IPv4" from the dropdown menu. Be sure to select the one that has IPv4 only
-      
-      7. Once again, open up your browser's developer tools. On Firefox it is with the F12 key
-      
-      8. In the Console, type the following and then press Enter:
-         
-         ```shell
-             $('#apn_list_input_dns_operate').show();
-             $('#profile_dns_status_table').show();
-             $('#profile_ipv6_dns_status_table').show();
-             $('#apn_select_blank').show();
-         ```
-      
-      9. You will see some new options
-      10. 
-      ![ipv4 apn](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/85e9bdb8-6e3b-4bab-9945-08684b1ea8f0)
+      ```   
+4. Tick the "Set DNS server manually" that comes up
 
-      11. Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
+5. You will see some new options come up
+   
+   ![dns server](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/40ae533f-c940-4f88-bfb8-e30124ac0240)
+
+6. Fill in only the "Primary DNS server" field with the Static IP address given to the rpi in the MAC Address Binding List
       
-      12. Then click save
+### Force the router to only use IPv4 and use only the pi-hole for IPV4 DNS
       
-      13. Restart your router
+1. Go to Network -> Mobile Network -> Internet Connection -> Profiles
+
+2. Click on the plus sign
+
+3. Give it a name that you will remember
+
+4. Tick the  '"Set as Default Profile" box
+
+5. Fill in "internet" for the APN
+
+6. For IP Type select "IPv4" from the dropdown menu. Be sure to select the one that has IPv4 only
+
+7. Once again, open up your browser's developer tools. On Firefox it is with the F12 key
+
+8. In the Console, type the following and then press Enter:
+   
+   ```shell
+       $('#apn_list_input_dns_operate').show();
+       $('#profile_dns_status_table').show();
+       $('#profile_ipv6_dns_status_table').show();
+       $('#apn_select_blank').show();
+   ```
+
+9. You will see some new options
+    
+    ![ipv4 apn](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/85e9bdb8-6e3b-4bab-9945-08684b1ea8f0)
+
+11. Tick the "Set DNS server manually" option
+12. Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
+13. Then click save
+14. Restart your router
