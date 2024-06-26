@@ -4,7 +4,7 @@
 
 1. You will need to have any supported operating system installed on your Raspberry Pi
 
-2. Make you all your software is updated by running:
+2. Make all your software is updated by running:
    
    ```shell
       sudo apt update && sudo apt upgrade -y
@@ -20,17 +20,15 @@
 
 You can have two ways to use the pi-hole on a network: either by individually configuring every client device to use the pi-hole as the DNS, or by setting up the router to use the pi-hole for its DNS function. 
 
-This guide will cover the second option because then any device that connects to the router will benefit from adblocking wihtout any additional setup.
-
-
+This guide will cover the second option because then any device that connects to the router will benefit from adblocking without any additional setup.
 
 ### Setting up a static IP address
 
-1. Go to your router's configration page (usually at 192.168.8.1). Note the some internet security suites like Bitdefender might show a warning for this page, but this is the only way to access the router settings.
+1. Go to your router's configuration page (usually at 192.168.8.1). Note that some internet security suites like Bitdefender might show a warning for this page, but this is the only way to access the router settings.
 
 2. Then go to Advanced -> Router -> DHCP -> IP and MAC Address Binding List
 
-3. Note down the DHCP IP range, because we will need to give the rpi an address outside of this range
+3. Note down the DHCP IP range, because we will need to give the pihole an address outside of this range
 
 4. Click on the plus sign, you will see this menu:
    
@@ -38,7 +36,7 @@ This guide will cover the second option because then any device that connects to
 
 5. Fill in the IP address that falls outside of the range noted in step 3. 
 
-6. Select your rpi device from the device name dropdown menu, the MAC address will fill in automatically
+6. Select your pihole device from the device name dropdown menu, the MAC address will fill in automatically
 
 7. Then click save
    
@@ -91,7 +89,7 @@ This guide will cover the second option because then any device that connects to
          
          <img title="" src="file:///C:/Users/User/Documents/pihole/Pi-hole-info/ipv4%20apn.png" alt="" width="302" data-align="center">
       
-      10.  Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
+      10. Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
       
       11. Then click save
       
