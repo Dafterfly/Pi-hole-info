@@ -87,7 +87,7 @@ This guide will cover the second option because then any device that connects to
 
 9. You will see some new options
    
-   <img title="" src="file:///C:/Users/User/Documents/Pi-hole/Pi-hole-info/ipv4%20apn.png" alt="" width="302" data-align="center">
+   ![ipv4 apn](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/2dd9612f-abdb-440c-bb3a-92e3e73a2073)
 
 10. Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
 
