@@ -32,7 +32,7 @@ This guide will cover the second option because then any device that connects to
 
 4. Click on the plus sign, you will see this menu:
    
-   ![](static ip.png)
+   ![static ip](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/acaac3a8-df0b-4248-ba08-414926c319f7)
 
 5. Fill in the IP address that falls outside of the range noted in step 3. 
 
@@ -56,9 +56,9 @@ This guide will cover the second option because then any device that connects to
 
 5. You will see some new options come up
    
-   ![](dns server.png)
+   ![dns server](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/8fc78817-18ab-41f2-b194-6b6a7b2ce03a)
 
-6. Fill in only the "Primary DNS server" field with the Static IP address given to the rpi in the MAC Address Binding List
+6. Fill in only the "Primary DNS server" field with the Static IP address given to the Pi-hole in the MAC Address Binding List
    
 ### Force the router to only use IPv4 and use only the pi-hole for IPV4 DNS
 
@@ -89,7 +89,7 @@ This guide will cover the second option because then any device that connects to
    
    ![ipv4 apn](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/2dd9612f-abdb-440c-bb3a-92e3e73a2073)
 
-10. Fill in only the "Primary IPv4 DNS server" with the IP address of the rpi
+10. Fill in only the "Primary IPv4 DNS server" with the IP address of the Pi-hole
 
 11. Then click save
 
