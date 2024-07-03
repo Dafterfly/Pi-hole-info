@@ -1,4 +1,0 @@
-# blocks the adverts in android mobile games that the more popular adlists don't catch
-
-*iads.unity3d.com
-*mediation.unity3d.com
