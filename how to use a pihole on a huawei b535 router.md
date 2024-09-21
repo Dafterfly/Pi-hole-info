@@ -59,6 +59,17 @@ This guide will cover the second option because then any device that connects to
    ![dns server](https://github.com/Dafterfly/Pi-hole-info/assets/17124333/8fc78817-18ab-41f2-b194-6b6a7b2ce03a)
 
 6. Fill in only the "Primary DNS server" field with the Static IP address given to the Pi-hole in the MAC Address Binding List
+
+7. Note that you need to make sure on the pi-hole settings page, under Settings -> DNS -> Advanced DNS settings, make sure the following boxes are **unticked**: "Never forward non-FQDN `A` and `AAAA` queries" and "Never forward reverse lookups for private IP ranges".
+
+ ![advanced dns settings](https://github.com/user-attachments/assets/b91e2ee5-2871-44c0-a8fd-3e0b4deb545a)
+
+   The reason for this is because as the below the settings indicate:
+   
+   > Enabling these two options may increase your privacy, **but may also prevent you from being able to access local hostnames if the Pi-hole is not used as DHCP server.**
+   
+   As a consequence, if these boxes are ticked, you can't access the pi-hole using the domain name `pi.hole`.
+
    
 ### Force the router to only use IPv4 and use only the pi-hole for IPV4 DNS
 
